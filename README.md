@@ -20,7 +20,7 @@ Root Token: myroot
 
 ```
 export VAULT_ADDR='http://0.0.0.0:8200'
-export VAULT_ROOT_TOKEN=myroot
+export VAULT_TOKEN=myroot
 ```
 
 Run the spring application.
