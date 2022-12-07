@@ -1,6 +1,10 @@
+spring:
+  application:
+    name: spring_boot_3_demo
+
 spring.cloud.vault:
+  scheme: http
   enabled: true
-  application-name: spring_boot_3_demo
   port: 8200
   fail-fast: true
   config:
@@ -9,6 +13,6 @@ spring.cloud.vault:
       min-renewal: 10s
       expiry-threshold: 1m
   authentication: TOKEN
-  token: hvs.SwCW6CcBVyfthduihvRjuenE
+  token: myroot
 
 spring.config.import: vault://
