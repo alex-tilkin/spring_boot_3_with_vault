@@ -1,0 +1,14 @@
+spring.cloud.vault:
+  enabled: true
+  application-name: spring_boot_3_demo
+  port: 8200
+  fail-fast: true
+  config:
+    lifecycle:
+      enabled: true
+      min-renewal: 10s
+      expiry-threshold: 1m
+  authentication: TOKEN
+  token: hvs.SwCW6CcBVyfthduihvRjuenE
+
+spring.config.import: vault://
