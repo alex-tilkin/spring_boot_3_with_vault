@@ -1,6 +1,6 @@
 # spring_boot_3_with_vault
 
-Install Vault on you machine and run in dev mode:
+Install Vault on your machine and run in dev mode:
 
 ```
 brew tap hashicorp/tap
