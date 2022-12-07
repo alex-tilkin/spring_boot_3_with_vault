@@ -15,11 +15,12 @@ sudo docker run --cap-add=IPC_LOCK -e 'VAULT_DEV_ROOT_TOKEN_ID=myroot' -e 'VAULT
 
 Pick the Root Token value and set it as environment variable so Spring can pick it up.
 
-It will look somethig like:
-Root Token: hvs.SwCW6CcBVyfthduihvRjuenE
+It will look like this:
+Root Token: myroot
 
 ```
-export VAULT_ROOT_TOKEN=hvs.SwCW6CcBVyfthduihvRjuenE
+export VAULT_ADDR='http://0.0.0.0:8200'
+export VAULT_ROOT_TOKEN=myroot
 ```
 
 Run the spring application.
